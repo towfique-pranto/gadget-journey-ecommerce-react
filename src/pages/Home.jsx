@@ -1,8 +1,7 @@
-import React from "react";
-import { getProducts } from "../data/products";
 import ProductCard from "../components/ProductCard";
+import { getProducts } from "../data/products";
 
-function Home() {
+export default function Home() {
   const products = getProducts();
   return (
     <div className="page">
@@ -23,5 +22,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
